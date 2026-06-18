@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres  -->
+    <title>Comics Universe - Tu Tienda de Cómics</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- ==========================================
+         ENCABEZADO Y MENU DE NAVEGACION
+         ========================================== -->
+    <header>
+        <h1>Comics Universe</h1>
+        <nav>
+            <ul>
+                <!-- Enlaces a las paginas del sitio -->
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="marvel.html">Marvel</a></li>
+                <li><a href="manga.html">Manga</a></li>
+                <!-- Enlace de salida -->
+                <li><a href="login.html" style="border: 1px solid #ff3366;">Salir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Banner de la tienda -->
+        <div class="banner-container">
+            <img src="assets/img/header.jpg" alt="Banner de la Tienda de Comics" class="banner-img">
+        </div>
+
+        <section>
+            <h2>Explora Nuestros Títulos</h2>
+            <div class="categorias-grid">
+
+                <!-- Card de Marvel -->
+                <div class="categoria-card">
+                    <img src="assets/img/marvel.jpg" alt="Imagen Cómics Marvel">
+                    <div class="categoria-card-info">
+                        <h3>Universo Marvel</h3>
+                        <p>Las mejores novelas gráficas de tus héroes preferidos: Spider-Man, Avengers y los X-Men.</p>
+                        <a href="marvel.html" class="btn">Ver Catálogo</a>
+                    </div>
+                </div>
+
+
+                <!-- Card de Manga -->
+                <div class="categoria-card">
+                    <img src="assets/img/manga.jpg" alt="Imagen Manga Japonés">
+                    <div class="categoria-card-info">
+                        <h3>Manga Shonen y Seinen</h3>
+                        <p>Los tomos recopilatorios japoneses más cotizados como One Piece y Demon Slayer.</p>
+                        <a href="manga.html" class="btn">Ver Catálogo</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TABLA DE PRODUCTOS DESTACADOS -->
+        <section>
+            <h2>Cómics de la Semana</h2>
+            <p>Lista de cómics con sus precios y stock:</p>
+
+            <div class="table-container">
+                <table border="1" cellpadding="10">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Categoría</th>
+                            <th>Precio</th>
+                            <th>Estado</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Spider-Man (Tapa Dura)</strong></td>
+                            <td>Marvel</td>
+                            <td>$249.00 MXN</td>
+                            <td><span class="status-badge status-instock">En Stock</span></td>
+                            <td><a href="marvel.html" class="btn" style="padding: 5px 10px; font-size: 0.8rem;">Ver</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>One Piece Vol. 100</strong></td>
+                            <td>Manga</td>
+                            <td>$99.00 MXN</td>
+                            <td><span class="status-badge status-outstock">Agotado</span></td>
+                            <td><a href="manga.html" class="btn" style="padding: 5px 10px; font-size: 0.8rem;">Ver</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <!-- UBICACIÓN -->
+        <section class="form-section" style="text-align: center;">
+            <h2>Nuestra Sucursal Principal</h2>
+            <p>Visítanos y conoce todo nuestro catálogo en persona:</p>
+            <div class="iframe-container" style="max-width: 600px; margin: 15px auto 0 auto;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.6651268616113!2d-99.15878602410313!3d19.38345548690835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff85ca76d8c7%3A0xd5a4b6e2cc984b49!2sUNIR%20M%C3%A9xico%20%7C%20Universidad%20Internacional%20de%20La%20Rioja%20en%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx"
+                    title="Ubicación de la tienda en la UNIR CDMX" loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <section class="form-section">
+            <h2>Suscribete al Club de Cómics</h2>
+
+            <!-- Formulario conectado a la función JS enviarSuscripcion mediante onsubmit -->
+            <form id="contactForm" onsubmit="enviarSuscripcion(event)">
+
+                <div class="form-group">
+                    <label for="contactName">Nombre Completo:</label>
+                    <input type="text" id="contactName" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Correo Electrónico:</label>
+                    <input type="email" id="contactEmail" name="email" placeholder="Ingresa tu correo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">¿Cuál es tu personaje favorito? (Opcional):</label>
+                    <textarea id="contactMessage" name="comentario" rows="3"
+                        placeholder="Ingresa tu personaje favorito..."></textarea>
+                </div>
+
+                <!-- Boton enviar -->
+                <button type="submit" class="btn">Suscribirme</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <p>&copy; 2026 Blog Comics - Actividad 1 UNIR. | Desarrollo de Aplicaciones en Red</p>
+        <p>Creado por Antonio de Jesus Sanchez Rayon</a>.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

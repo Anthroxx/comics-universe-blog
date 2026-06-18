@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga - Comics Universe</title>
+    <!-- CSS general -->
+    <link class="styles" rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Encabezado y navegación -->
+    <header>
+        <h1>Comics Universe</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="marvel.html">Marvel</a></li>
+                <li><a href="manga.html" class="active">Manga</a></li>
+                <li><a href="login.html" style="border: 1px solid #ff3366;">Salir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido de la sección de Manga -->
+    <main>
+
+        <section>
+            <h2>Manga Shonen</h2>
+            <p>Explora el Manga de nuestra colección.</p>
+
+            <!-- Contenedor de las tarjetas de cómics -->
+            <div class="comics-grid">
+
+                <!-- Tarjeta 1 -->
+                <div class="comic-card">
+                    <img src="assets/img/one_piece.jpg" alt="Portada One Piece 100">
+                    <div class="comic-info">
+                        <h3>One Piece Vol. 100</h3>
+                        <p>La gran aventura pirata creada por Eiichiro Oda.</p>
+                        <div class="comic-price">$99.00 MXN</div>
+                        <button class="btn" onclick="agregarAlCarrito('One Piece Vol. 100')">Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="comic-card">
+                    <img src="assets/img/demon_slayer.jpg" alt="Portada Demon Slayer 1">
+                    <div class="comic-info">
+                        <h3>Demon Slayer Vol. 1</h3>
+                        <p>El viaje de Tanjiro Kamado para salvar a su hermana Nezuko.</p>
+                        <div class="comic-price">$120.00 MXN</div>
+                        <button class="btn" onclick="agregarAlCarrito('Demon Slayer Vol. 1')">Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="comic-card">
+                    <img src="assets/img/berserk.jpg" alt="Portada Berserk 1">
+                    <div class="comic-info">
+                        <h3>Berserk Vol. 1</h3>
+                        <p>El inicio del viaje del Guerrero Negro, Guts.</p>
+                        <div class="comic-price">$199.00 MXN</div>
+                        <button class="btn" onclick="agregarAlCarrito('Berserk Vol. 1')">Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="comic-card">
+                    <img src="assets/img/chainsaw_man.jpg" alt="Portada Chainsaw Man 1">
+                    <div class="comic-info">
+                        <h3>Chainsaw Man Vol. 1</h3>
+                        <p>La increíble vida de Denji y su perro demonio motosierra Pochita.</p>
+                        <div class="comic-price">$179.00 MXN</div>
+                        <button class="btn" onclick="agregarAlCarrito('Chainsaw Man Vol. 1')">Añadir al carrito</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Blog Comics - Actividad 1 UNIR. | Desarrollo de Aplicaciones en Red</p>
+        <p>Creado por Antonio de Jesus Sanchez Rayon</a>.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

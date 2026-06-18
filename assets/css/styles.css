@@ -1,0 +1,400 @@
+/* ESTILOS GENERALES Y CONFIGURACIÓN */
+
+/* Importamos la fuente de texto Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0e15;
+    /* Fondo oscuro profundo */
+    color: #ffffff;
+    /* Texto claro principal */
+    line-height: 1.6;
+    padding-bottom: 80px;
+    /* Espacio para el footer fijo */
+}
+
+/* ENCABEZADO Y MENU DE NAVEGACION */
+header {
+    background-color: #161824;
+    /* Fondo gris oscuro para la cabecera */
+    border-bottom: 3px solid #ffde00;
+    /* Borde inferior amarillo llamativo */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #ffde00;
+    /* Título amarillo */
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 0px #000000;
+    /* Sombra negra para el título */
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style-type: none;
+    /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    /* Coloca los elementos uno al lado de otro */
+    margin: 5px 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    /* Quita el subrayado del enlace */
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: #252839;
+    /* Fondo de los botones de navegación */
+    transition: 0.3s;
+    /* Transición suave para el hover */
+}
+
+/* Efecto al pasar el mouse por encima de los enlaces */
+nav ul li a:hover {
+    background-color: #ffde00;
+    /* Fondo amarillo al pasar el mouse */
+    color: #0d0e15;
+    /* Texto oscuro */
+}
+
+/* Clase para la página activa actual */
+nav ul li a.active {
+    background-color: #00f0ff;
+    /* Fondo celeste neón */
+    color: #0d0e15;
+    /* Texto oscuro */
+}
+
+/* CONTENIDO PRINCIPAL (Main)*/
+main {
+    width: 90%;
+    /* Ancho de la página */
+    max-width: 1100px;
+    margin: 20px auto;
+    /* Centrar el contenido */
+}
+
+/* Títulos principales de sección */
+h2 {
+    color: #00f0ff;
+    /* Subtítulos de sección en color cian */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00f0ff;
+    /* Línea decorativa inferior */
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #ffde00;
+    /* Títulos menores en amarillo */
+    margin-bottom: 8px;
+}
+
+/* Contenedor del Banner */
+.banner-container {
+    margin-bottom: 30px;
+    border: 3px solid #ffde00;
+    /* Borde amarillo */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* GRID DE CATEGORIAS (Flexbox sencillo)*/
+.categorias-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Si no caben, bajan de fila */
+    margin-bottom: 30px;
+}
+
+.categoria-card {
+    background-color: #161824;
+    /* Fondo oscuro de las tarjetas */
+    width: 48%;
+    /* Dos tarjetas por fila */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #33364d;
+    transition: 0.3s;
+}
+
+/* Efecto al pasar el mouse sobre la tarjeta */
+.categoria-card:hover {
+    border-color: #00f0ff;
+    /* Cambia el borde a cian */
+    transform: translateY(-5px);
+    /* Sube un poco la tarjeta */
+}
+
+.categoria-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* Ajusta la imagen a la tarjeta */
+}
+
+.categoria-card-info {
+    padding: 15px;
+}
+
+.categoria-card-info p {
+    color: #a0a5c0;
+    /* Color de texto atenuado */
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+/* Botones estándar */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #00f0ff;
+    color: #0d0e15;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffde00;
+    /* Cambia a amarillo al pasar el mouse */
+}
+
+/* TABLA DE PRECIOS*/
+.table-container {
+    margin-bottom: 30px;
+    background-color: #161824;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #33364d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Junta los bordes de la tabla */
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #33364d;
+    /* Líneas divisorias */
+}
+
+th {
+    color: #ffde00;
+    /* Encabezados amarillos */
+    text-align: left;
+}
+
+td {
+    color: #ffffff;
+}
+
+/* Clases de stock */
+.status-badge {
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.status-instock {
+    background-color: rgba(0, 240, 255, 0.1);
+    color: #00f0ff;
+}
+
+.status-outstock {
+    background-color: rgba(255, 51, 102, 0.1);
+    color: #ff3366;
+}
+
+/* SECCION DE FORMULARIOS (Suscripción y Contacto)*/
+.form-section {
+    background-color: #161824;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #33364d;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    /* Espacio entre campos del formulario */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #33364d;
+    background-color: #0d0e15;
+    color: #ffffff;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #00f0ff;
+    /* Borde celeste al seleccionar */
+}
+
+/* Contenedor del formulario de login */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #161824;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #ffde00;
+}
+
+
+
+.iframe-container {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Ajusta los mapas y vídeos incrustados */
+.iframe-container iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Reproductor de Audio */
+.audio-wrapper {
+    margin-top: 10px;
+    background-color: #0d0e15;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* PIE DE PÁGINA (Footer Fijo)*/
+footer {
+    background-color: #161824;
+    border-top: 1px solid #33364d;
+    color: #a0a5c0;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 0.85rem;
+    z-index: 100;
+}
+
+footer a {
+    color: #00f0ff;
+    text-decoration: none;
+}
+
+/* VISTA DE PRODUCTOS (Detalles Marvel, DC, Manga)*/
+.comics-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.comic-card {
+    background-color: #161824;
+    width: 23%;
+    /* Cuatro cómics por fila */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #33364d;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.comic-card:hover {
+    border-color: #ffde00;
+}
+
+.comic-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.comic-info {
+    padding: 15px;
+}
+
+.comic-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00f0ff;
+    margin: 8px 0;
+}
+
+
+
+/* RESPONSIVIDAD (Adaptar a pantallas de móviles)*/
+@media (max-width: 768px) {
+    .categoria-card {
+        width: 100%;
+        /* Ocupan todo el ancho en móviles */
+    }
+
+
+
+    .comic-card {
+        width: 48%;
+        /* Dos cómics por fila en móviles */
+    }
+
+    body {
+        padding-bottom: 100px;
+        /* Más espacio para el footer en pantallas pequeñas */
+    }
+}

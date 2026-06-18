@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Comics - Comics Universe</title>
+    <link class="styles" rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Encabezado y navegación -->
+    <header>
+        <h1>Comics Universe</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="marvel.html" class="active">Marvel</a></li>
+                <li><a href="manga.html">Manga</a></li>
+                <li><a href="login.html" style="border: 1px solid #ff3366;">Salir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido de la sección de Marvel -->
+    <main>
+
+        <section>
+            <h2>Universo Marvel</h2>
+            <p>Explora los cómics de Marvel de nuestra colección.</p>
+
+            <!-- Contenedor de las tarjetas -->
+            <div class="comics-grid">
+
+                <!-- Tarjeta 1 -->
+                <div class="comic-card">
+                    <img src="assets/img/spiderman.jpg" alt="Portada Spider-Man">
+                    <div class="comic-info">
+                        <h3>Spider-Man</h3>
+                        <p>Una historia sobre Peter Parker y su amor Gwen Stacy.</p>
+                        <div class="comic-price">$250.00 MXN</div>
+                        <!-- Evento onclick directo que llama a la función en main.js -->
+                        <button class="btn" onclick="agregarAlCarrito('Spider-Man: Blue')">Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="comic-card">
+                    <img src="assets/img/civil_war.jpg" alt="Portada Civil War">
+                    <div class="comic-info">
+                        <h3>Civil War</h3>
+                        <p>El gran enfrentamiento entre Iron Man y el Capitán América.</p>
+                        <div class="comic-price">$290.00 MXN</div>
+                        <button class="btn" onclick="agregarAlCarrito('Civil War')">Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="comic-card">
+                    <img src="assets/img/daredevil.jpg" alt="Portada Daredevil">
+                    <div class="comic-info">
+                        <h3>Daredevil: Born Again</h3>
+                        <p>El volumen donde Kingpin destruye la vida de Matt Murdock.</p>
+                        <div class="comic-price">$290.00 MXN</div>
+                        <button class="btn" onclick="agregarAlCarrito('Daredevil: Born Again')">Añadir al
+                            carrito</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="comic-card">
+                    <img src="assets/img/guantelete.jpg" alt="Portada Guantelete del Infinito">
+                    <div class="comic-info">
+                        <h3>Guantelete del Infinito</h3>
+                        <p>La clásica historia de Thanos y las Gemas del Infinito.</p>
+                        <div class="comic-price">$350.00 MXN</div>
+                        <button class="btn" onclick="agregarAlCarrito('El Guantelete del Infinito')">Añadir al
+                            carrito</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sección de Multimedia -->
+        <section
+            style="margin-top: 30px; padding: 20px; background-color: #161824; border-radius: 10px; text-align: center;">
+            <h3>Banda Sonora de Marvel</h3>
+            <p>Escucha la música de fondo de tus personajes favoritos:</p>
+            <div style="margin: 15px 0;">
+                <audio id="promoAudio" controls style="width: 100%;">
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Blog Comics - Actividad 1 UNIR. | Desarrollo de Aplicaciones en Red</p>
+        <p>Creado por Antonio de Jesus Sanchez Rayon</a>.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
