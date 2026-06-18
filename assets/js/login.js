@@ -11,7 +11,7 @@ function validarLogin(event) {
     // Validacion condicional del usuario administrador
     if (usuario == "admin" && clave == "12345") {
         // Redirecciona a la tienda
-        window.location.href = "index.html";
+        window.location.href = "main.html";
     } else {
         // Mensaje si los datos no coinciden
         alert("Usuario o contraseña incorrectos. (Usa admin y 12345)");
